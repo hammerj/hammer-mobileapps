@@ -1,1 +1,3 @@
 Greetings Sensei Hammer.
+
+“I am practicing editing files with Git and GitHub”
