@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.soundsapps.MainActivity" >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <ImageButton
+            android:id="@+id/buttonDidgeridoo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick = "buttonDidgeridooClick"
+            android:src="@drawable/didgeridoo" />
+
+        <ImageButton
+            android:id="@+id/buttonElectric"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick = "buttonElectricClick"
+            android:src="@drawable/electric" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <ImageButton
+            android:id="@+id/buttonGuitar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick = "buttonGuitarClick"
+            android:src="@drawable/guitar" />
+
+        <ImageButton
+            android:id="@+id/buttonPiano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick = "buttonPianoClick"
+            android:src="@drawable/piano" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <ImageButton
+            android:id="@+id/buttonTambura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick = "buttonTamburaClick"
+            android:src="@drawable/tambura" />
+
+        <ImageButton
+            android:id="@+id/buttonTrumpet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick = "buttonTrumpetClick"
+            android:src="@drawable/trumpet" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/buttonStopSounds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick = "stopAllSounds"
+            android:text="Stop Sounds" />
+
+    </TableRow>
+
+</LinearLayout>
