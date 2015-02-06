@@ -20,6 +20,9 @@ public class Actor {
 	private int w; // width
 	private int h; // height
 	
+	// boolean is visable to check if draw
+	private boolean isVisable = true;
+	
 	// Context
 	private Context aContext;
 	private int costume;
@@ -69,6 +72,10 @@ public class Actor {
 		return h;
 	}
 	
+	public boolean getVisable() {
+		return isVisable;
+	}
+	
 	// Modifiers - Change data in Actor
 	public void setColor(int col) {
 		c = col;
@@ -101,6 +108,18 @@ public class Actor {
 		p.y += dy;
 	}
 	
+	public void setWidth(int width) {
+		w = width;
+	}
+	
+	public void setHeight(int height) {
+		h = height;
+	}
+	
+	public void setVisable(boolean v) {
+		isVisable = v;
+	}
+	
 	public void bounce(Canvas c) {
 		if (p.x + s > c.getWidth() || p.x < 0) {
 			dx = dx * -1;
@@ -121,6 +140,17 @@ public class Actor {
 	
 	public void drawSquare(Canvas c) {
 		c.drawRect(p.x, p.y, p.x+s, p.y+s, paint);
+	}
+	
+	public void drawRect(Canvas c) {
+		if (isVisable) {
+			c.drawRect(p.x, p.y, p.x+w, p.y+h, paint);
+		}
+	}
+	
+	// Bounce up
+	public void bounceUp() {
+		dy = dy * -1;
 	}
 	
 	//Function to return true of false if touching another Actor
