@@ -24,23 +24,15 @@
         </activity>
         <activity
             android:name=".Activity1"
-            android:label="Activity 1"
-            android:parentActivityName="com.example.hammerintentexercise.MainActivity"
-            >
-            <meta-data
-                android:name = "android.support.PARENT_ACTIVITY"
-                android:value = "com.example.hammerintentexercise.MainActivity"
-            />
+            android:label="@string/title_activity_activity1" >
         </activity>
         <activity
             android:name=".Activity2"
-            android:label="Activity 2"
-            android:parentActivityName="com.example.hammerintentexercise.MainActivity"
-            >
-            <meta-data 
-                android:name = "android.support.PARENT_ACTIVITY"
-                android:value = "com.exmaple.hammerintentexercise.MainActivity"
-            />
+            android:label="@string/title_activity_activity2" >
+        </activity>
+        <activity
+            android:name=".Activity3"
+            android:label="@string/title_activity_activity3" >
         </activity>
     </application>
 

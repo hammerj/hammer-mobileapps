@@ -8,7 +8,21 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.hammerintentexercise.MainActivity" >
+    tools:context="com.example.hammerintentexercise.Activity3" >
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Activity Three" />
+
+    </TableRow>
 
     <TableRow
         android:id="@+id/tableRow1"
@@ -16,11 +30,11 @@
         android:layout_height="wrap_content" >
 
         <Button
-            android:id="@+id/buttonActivityOne"
+            android:id="@+id/buttonMenuActivity3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick = "handleClick"
-            android:text="Activity One" />
+            android:onClick="handleClick"
+            android:text="Main Menu" />
 
     </TableRow>
 
@@ -30,25 +44,10 @@
         android:layout_height="wrap_content" >
 
         <Button
-            android:id="@+id/buttonActivityTwo"
-            android:layout_width="match_parent"
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick = "handleClick"
-            android:text="Activity Two" />
-
-    </TableRow>
-
-    <TableRow
-        android:id="@+id/tableRow3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <Button
-            android:id="@+id/buttonActivityThree"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="handleClick"
-            android:text="Activity Three" />
+            android:text="Button" />
 
     </TableRow>
 

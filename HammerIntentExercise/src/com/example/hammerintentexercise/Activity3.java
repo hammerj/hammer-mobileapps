@@ -7,25 +7,25 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-public class MainActivity extends Activity {
+public class Activity3 extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
-	}
-	
-	@Override
-	protected void onResume() {
-		super.onResume();
-		setContentView(R.layout.activity_main);
+		setContentView(R.layout.activity_activity3);
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
+		getMenuInflater().inflate(R.menu.activity3, menu);
 		return true;
+	}
+	
+	@Override
+	protected void onResume() {
+		super.onResume();
+		setContentView(R.layout.activity_activity3);
 	}
 
 	@Override
@@ -40,31 +40,13 @@ public class MainActivity extends Activity {
 		return super.onOptionsItemSelected(item);
 	}
 	
-	//Function to switch Intents
+	// Function to switch Intents
 	public void handleClick(View v) {
-		// Which button was clicked
-		switch (v.getId()) {
-			case R.id.buttonActivityOne:
-				// Create new Intent
-				Intent intentOne = new Intent(this, Activity1.class);
-				// Start Intent
-				startActivity(intentOne);
-				break;
-			case R.id.buttonActivityTwo:
-				// Create new Intent
-				Intent intentTwo = new Intent(this, Activity2.class);
-				startActivity(intentTwo);
-				break;
-			case R.id.buttonActivityThree:
-				// Create new Intent
-				Intent intentThree = new Intent(this, Activity3.class);
-				startActivity(intentThree);
-				break;
-		} // end Switch
-		 // end handleClick
+		Intent intent = new Intent(this, MainActivity.class);
+		startActivity(intent);
 	}
-	
 }
+
 
 
 
